@@ -1,5 +1,8 @@
 public Integer diff(Integer a, Integer b) {
     //code here
-    result = a-b;
-    System.out.print(Math.abs(result));
+    While(a > 0 && b > 0){
+        result = a-b;
+        System.out.print(Math.abs(result));
+    }
+   
 }
