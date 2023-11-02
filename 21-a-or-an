@@ -1,0 +1,17 @@
+public String aOrAn(String word) {
+    //code here
+    if (String.isNotBlank(word)) {
+        // Convert the word to lowercase for case-insensitive comparison
+        String lowerCaseWord = word.toLowerCase();
+        
+        // Check if the word starts with a vowel
+        if (lowerCaseWord.startsWith('a') || lowerCaseWord.startsWith('e') || lowerCaseWord.startsWith('i') ||
+            lowerCaseWord.startsWith('o') || lowerCaseWord.startsWith('u')) {
+            return 'an ' + word;
+        } 
+        else {
+            return 'a ' + word;
+        }
+    }
+    return word;
+}
